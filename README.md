@@ -8,7 +8,7 @@ Initial plan is to be able to run the diary via the command line and be able to 
 
 ## TODO
 
-- [ ] Saves an entry
+- [x] Saves an entry
 - [ ] Display the entries unencrypted
 - [ ] Encrypts the entries
 - [ ] Displays the entries encrypted
@@ -24,8 +24,24 @@ logbook = Logbook.new
 # Logbook methods
 logbook.add_entry('new entry') # => creates a new entry in the journal
 logbook.read # => displays the entries
-logbook.lock(key) # => locks the journal and encrypts the entries
+logbook.lock(:key) # => locks the journal and encrypts the entries
 logbook.read # => displays the entries but they are encrypted
+```
+
+### Next Goal: 
+
+Refactoring for expansion
+
+```Ruby
+logbook.read_entries # Displays the entries in the console in the following format
+# - first entry
+# - second entry
+logbook.add_entry('yet another entry')
+logbook.read_entries # Displays the entries in the console in the following format
+# - first entry
+# - second entry
+# - yet another entry
+logbook.lock(:key)
 ```
 
 ### Next Goal: running the program in the command line
