@@ -8,6 +8,7 @@ ruby '2.5.0'
 
 group :development do
   gem 'rubocop'
+  gem 'rake'
 end
 
 group :test do
