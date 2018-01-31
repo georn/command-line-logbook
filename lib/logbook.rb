@@ -11,8 +11,6 @@ class Logbook
   end
 
   def add_entry(entry)
-    p @logbook
     @logbook.push(entry)
-    p @logbook
   end
 end
