@@ -1,7 +1,8 @@
+language: ruby
 rvm:
   - 2.5.0
+install: rvm install 2.5.0
 script:
-  - rvm install 2.5.0
   - rvm --default use 2.5.0
   - gem install bundle
   - bundle 
