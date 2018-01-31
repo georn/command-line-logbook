@@ -1,9 +1,5 @@
 language: ruby
 rvm:
-  - 2.5.0
-install: rvm install 2.5.0
+  - 2.4.1
 script:
-  - rvm --default use 2.5.0
-  - gem install bundle
-  - bundle 
   - bundle exec rspec spec
