@@ -18,14 +18,14 @@ Initial plan is to be able to run the diary via the command line and be able to 
 Inside of `erb`
 
 ```Ruby
-# Creates new Diary
-diary = Diary.new
+# Creates new Logbook
+logbook = Logbook.new
 
-# Diary methods
-diary.add_entry('new entry') # => creates a new entry in the journal
-diary.read() # => displays the entries
-diary.lock(key) # => locks the journal and encrypts the entries
-diary.read() # => displays the entries but they are encrypted
+# Logbook methods
+logbook.add_entry('new entry') # => creates a new entry in the journal
+logbook.read # => displays the entries
+logbook.lock(key) # => locks the journal and encrypts the entries
+logbook.read # => displays the entries but they are encrypted
 ```
 
 ### Next Goal: running the program in the command line
