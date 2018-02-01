@@ -61,9 +61,18 @@ logbook.read_entries
 
 #### Using [`bcrypt`](https://github.com/codahale/bcrypt-ruby)
 
-Steps of encryption
+Here is a test run of the encryption and comparison process
 
-![bcrypt-encryption](./progress/bcrypt-encryption.jpeg)
+![bcrypt-encryption](./img/bcrypt-encryption.jpeg)
+
+Thus, based on the test run in `irb` above we can write a list of steps the program should do using bcrypt. 
+
+##### Steps of encryption
+
+- [ ] scan the unique key in memory
+- [ ] Encrypt the key
+- [ ] Save it somewhere safe locally
+
 
 ### Next Goal: running the program in the command line
 ### Final Goal : Build it as a Ruby Gem
