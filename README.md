@@ -1,4 +1,4 @@
- # Logbook [![Build Status](https://travis-ci.org/georn/command-line-diary.svg?branch=master)](https://travis-ci.org/georn/command-line-diary)
+ # Logbook [![Build Status](https://travis-ci.org/georn/command-line-diary.svg?branch=master)](https://travis-ci.org/georn/command-line-diary) [![Coverage Status](https://coveralls.io/repos/github/georn/command-line-diary/badge.svg?branch=master)](https://coveralls.io/github/georn/command-line-diary?branch=master)
 
 Inspired by the ship's logs this is a cli-logbook for whenever you feel like taking down a note while running some mad devops commands in your UNIX terminal.
  
@@ -58,6 +58,12 @@ logbook.read_entries
 # - 
 # 
 ```
+
+#### Using [`bcrypt`](https://github.com/codahale/bcrypt-ruby)
+
+Steps of encryption
+
+![bcrypt-encryption](./progress/bcrypt-encryption.jpeg)
 
 ### Next Goal: running the program in the command line
 ### Final Goal : Build it as a Ruby Gem
