@@ -2,9 +2,6 @@ require 'rspec'
 require 'log.rb'
 require 'logbook.rb'
 
-# let(:log) { subject }
-# let(:logbook) { Logbook.new(:log)}
-
 describe Log do
   describe '#initialize' do
     it 'exist' do
@@ -18,7 +15,6 @@ describe Log do
     it 'stores entries' do
       logbook = Logbook.new
       logbook.add_entry('first entry')
-      # p logbook.read
       expect(logbook.read).to eq('- first entry')
     end
   end
